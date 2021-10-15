@@ -9,11 +9,11 @@ import {
 } from "@mui/material";
 import SportsFootballIcon from "@mui/icons-material/SportsFootball";
 import BuildIcon from "@mui/icons-material/Build";
-const Interests = () => {
+const Interests = ({responsive}) => {
   return (
     <div style={{ width: "100%" }}>
       <Typography
-        align="center"
+        align={responsive ? "center" : "left"}
         sx={{
           color: "gray",
           textTransform: "uppercase",

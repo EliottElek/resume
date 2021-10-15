@@ -14,7 +14,7 @@ const Skills = ({responsive}) => {
   return (
     <div style={{ width: "100%" }}>
       <Typography
-        align="center"
+        align={responsive ? "center" : "left"}
         sx={{
           color: "gray",
           textTransform: "uppercase",
