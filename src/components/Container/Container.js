@@ -5,6 +5,7 @@ import PersonalExperience from "../PersonalExperience/PersonalExperience";
 import Formation from "../Formation/Formation";
 import Contact from "../Contact/Contact";
 import Skills from "../Skills/Skills";
+import Interests from "../Interests/Interests";
 const Container = ({ responsive }) => {
   return (
     <Paper
@@ -37,7 +38,12 @@ const Container = ({ responsive }) => {
           lg={4}
         >
           <Contact responsive={responsive} />
-          <Skills/>
+          {responsive && (
+            <>
+              <Skills responsive={responsive} />
+              <Interests responsive={responsive} />
+            </>
+          )}
         </Grid>
         <Grid
           item
@@ -53,6 +59,12 @@ const Container = ({ responsive }) => {
         >
           <PersonalExperience responsive={responsive} />
           <Formation responsive={responsive} />
+          {!responsive && (
+            <>
+              <Skills responsive={responsive} />
+              <Interests responsive={responsive} />
+            </>
+          )}
         </Grid>
       </Grid>
     </Paper>

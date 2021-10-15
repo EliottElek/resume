@@ -1,15 +1,16 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import List from "@mui/material/List";
-import EmailIcon from "@mui/icons-material/Email";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
+import CodeIcon from '@mui/icons-material/Code';
+import TranslateIcon from '@mui/icons-material/Translate';
+import LanguageIcon from '@mui/icons-material/Language';
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
-import GitHubIcon from "@mui/icons-material/GitHub";
-const Skills = () => {
+
+const Skills = ({responsive}) => {
   return (
     <div style={{ width: "100%" }}>
       <Typography
@@ -26,33 +27,34 @@ const Skills = () => {
         <Divider />
         <ListItem disablePadding sx={{ width: "100%" }}>
             <ListItemIcon>
-              <EmailIcon />
+              <CodeIcon />
             </ListItemIcon>
             <ListItemText>
-              <ListItemText primary="eliott.morcillo@gmail.com" />
+              <ListItemText primary="C, C++, Java, PHP, HTML-CSS-Javascript, NodeJS" />
             </ListItemText>
         </ListItem>
         <ListItem disablePadding>
             <ListItemIcon>
-              <PhoneInTalkIcon />
+              <DeveloperModeIcon />
             </ListItemIcon>
-            <ListItemText primary="+33 6 21 21 82 25" />
+            <ListItemText primary="ReactJS, ReactNative, Gatsby" />
         </ListItem>
       </List>
-      <Divider />
       <List>
         <ListItem disablePadding>
             <ListItemIcon>
-              <LinkedInIcon />
+              <LanguageIcon />
             </ListItemIcon>
-            <ListItemText primary="Eliott Morcillo" />
+            <ListItemText primary="WordPress, Divi Builder, Prestashop" />
         </ListItem>
         <ListItem disablePadding>
             <ListItemIcon>
-              <GitHubIcon />
+              <TranslateIcon />
             </ListItemIcon>
-            <ListItemText primary="EliottElek" />
+            <ListItemText primary="Anglais (C1), Allemand (B1), Français (natif)" />
         </ListItem>
+        {responsive && <Divider />}
+
         </List>
     </div>
   );
