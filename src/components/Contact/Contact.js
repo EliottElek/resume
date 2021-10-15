@@ -43,7 +43,7 @@ const Contact = ({ responsive }) => {
         <ListItem disablePadding>
           <ListItemButton
             onClick={(e) => {
-              window.location = "phoneto:+33621218225";
+              window.location = "tel:+33621218225";
               e.preventDefault();
             }}
           >

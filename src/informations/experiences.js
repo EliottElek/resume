@@ -7,7 +7,7 @@ const experiences = [
   {
     title: "GROUPE PSA (PEUGEOT)",
     period: 'Janvier 2020– Février 2020',
-    body: "Stage de 5 semaines dans le secteur Recherche et Développement chez PSA Poissy.Création d’un programme Excel en VBA permettant de faciliter la récupération et l’interprétation de certaines données liées aux retours utilisateurs. ",
+    body: "Stage de 5 semaines dans le secteur Recherche et Développement chez PSA Poissy. Création d’un programme Excel en VBA permettant de faciliter la récupération et l’interprétation de certaines données liées aux retours utilisateurs. ",
   },
   {
     title: "THE CHARGING PLACE",

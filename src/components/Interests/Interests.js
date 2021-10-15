@@ -29,7 +29,7 @@ const Interests = () => {
             <SportsFootballIcon />
           </ListItemIcon>
           <ListItemText>
-            <ListItemText primary="Football américain: 6ans, quarterback" />
+            <ListItemText primary="Football américain : 6ans, quarterback" />
           </ListItemText>
         </ListItem>
         <ListItem disablePadding sx={{ width: "100%" }}>
@@ -37,7 +37,7 @@ const Interests = () => {
             <BuildIcon />
           </ListItemIcon>
           <ListItemText>
-            <ListItemText primary="Usinage conventionnel: modélisation, prototypage et construction de toutes sortes de mécanismes et objets dans des matériaux tels que l’acier, l’aluminium, le laiton, le plastique." />
+            <ListItemText primary="Usinage conventionnel : modélisation, prototypage et construction de toutes sortes de mécanismes et objets dans des matériaux tels que l’acier, l’aluminium, le laiton, le plastique." />
           </ListItemText>
         </ListItem>
       </List>

@@ -7,6 +7,7 @@ import Contact from "../Contact/Contact";
 import Skills from "../Skills/Skills";
 import Interests from "../Interests/Interests";
 const Container = ({ responsive }) => {
+
   return (
     <Paper
       elevation={4}
