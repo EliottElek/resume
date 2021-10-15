@@ -1,7 +1,7 @@
 const experiences = [
   {
     title: "HOFFMANN.AI",
-    period: 'Janvier 2020– Février 2020',
+    period: 'Avril 2021– Septembre 2021',
     body: "Développement d'applications web et sites web, notamment grâce à des plateformes telles que Wordpress, ainsi qu'à des frameworks tels que ReactJS et Gatsby.",
   },
   {
