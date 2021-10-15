@@ -10,7 +10,6 @@ const Container = ({ responsive }) => {
     <Paper
       elevation={4}
       sx={{
-        margin: "5px",
         maxWidth: "842px",
         width: "100%",
         height: "auto!important",
