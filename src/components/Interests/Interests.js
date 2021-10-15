@@ -20,7 +20,7 @@ const Interests = () => {
           fontWeight: "bold",
         }}
       >
-        Interests
+        Intérêts
       </Typography>
       <List sx={{ width: "100%" }}>
         <Divider />

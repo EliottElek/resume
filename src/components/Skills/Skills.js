@@ -21,7 +21,7 @@ const Skills = ({responsive}) => {
           fontWeight: "bold",
         }}
       >
-        Skills
+        Compétences
       </Typography>
       <List sx={{ width: "100%" }}>
         <Divider />
