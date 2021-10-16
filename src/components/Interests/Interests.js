@@ -29,7 +29,7 @@ const Interests = ({responsive}) => {
             <SportsFootballIcon />
           </ListItemIcon>
           <ListItemText>
-            <ListItemText primary="Football américain : 6ans, quarterback" />
+            <ListItemText primary="Football américain en compétition (championnat national): 6 ans, quarterback." />
           </ListItemText>
         </ListItem>
         <ListItem disablePadding sx={{ width: "100%" }}>
@@ -41,6 +41,7 @@ const Interests = ({responsive}) => {
           </ListItemText>
         </ListItem>
       </List>
+      <Typography variant="caption" align = 'center' gutterBottom component="div" color="darkgrey">CV réalisé en ReactJS par Eliott Morcillo</Typography>
     </div>
   );
 };

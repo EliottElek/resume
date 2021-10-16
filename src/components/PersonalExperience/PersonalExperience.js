@@ -1,6 +1,7 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import Divider from "../Divider/Divider";
+import Logo from '../Logo/Logo';
 import experiences from "../../informations/experiences";
 const PersonalExperience = ({ responsive }) => {
   return (
@@ -39,6 +40,7 @@ const PersonalExperience = ({ responsive }) => {
         <Divider />
         {experiences.map((experience) => (
           <>
+          <div style ={{display:'flex', justifyContent:"center", alignItems:"center"}}>
             <Typography
               variant="body1"
               sx={{
@@ -48,17 +50,22 @@ const PersonalExperience = ({ responsive }) => {
             >
               {experience.title}
             </Typography>
+            <Logo logoUrl = {experience.logoUrl}/>
+            </div>
             <Typography variant="caption" gutterBottom component="div" color="darkgrey">{experience.period}</Typography>
-            <Typography
+            {experience.body.map((point)=>(
+ <Typography
               variant="body1"
               sx={{
-                marginTop:'8px',
-                marginBottom:'22px',
+                marginTop:'2px',
+                marginBottom:'8px',
                 color: "gray",
               }}
             >
-              {experience.body}
+              <li>{point.point}</li>
             </Typography>
+            ))}
+           
           </>
         ))}
       </div>

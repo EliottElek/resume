@@ -60,7 +60,7 @@ const Header = ({ responsive }) => {
           >
             Eliott Morcillo
           </Typography>
-          <Typography
+          {/* <Typography
             align="center"
             sx={{
               color: "white",
@@ -69,7 +69,7 @@ const Header = ({ responsive }) => {
             }}
           >
             Etudiant en ingénierie chez ECE Paris
-          </Typography>
+          </Typography> */}
         </Grid>
       </Grid>
     </div>
