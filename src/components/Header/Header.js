@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
-import background from "../images/background.jpg";
+import background from "../images/background.png";
 import Avatar from "./Avatar/Avatar";
 const Header = ({ responsive }) => {
   return (
@@ -20,8 +20,6 @@ const Header = ({ responsive }) => {
           backgroundImage: "url('" + background + "')",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          filter: 'grayscale(30%)',
-
         }}
         sx={{ height: "100%" }}
       >

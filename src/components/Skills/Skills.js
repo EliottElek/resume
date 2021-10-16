@@ -37,7 +37,7 @@ const Skills = ({responsive}) => {
             <ListItemIcon>
               <DeveloperModeIcon />
             </ListItemIcon>
-            <ListItemText primary="ReactJS, ReactNative, Gatsby" />
+            <ListItemText primary="ReactJS, BabylonJS, ReactNative, Gatsby" />
         </ListItem>
       </List>
       <List>

@@ -35,7 +35,7 @@ const PersonalExperience = ({ responsive }) => {
             marginTop:"10px"
           }}
         >
-          Expérience professionelle
+          Expérience professionnelle
         </Typography>
         <Divider />
         {experiences.map((experience) => (

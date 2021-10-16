@@ -29,7 +29,7 @@ const experiences = [
     title: "THE CHARGING PLACE",
     period: 'Mai 2019– Juillet 2019',
 logoUrl:'https://pbs.twimg.com/profile_images/1348978435302043649/_fThc9l3_400x400.jpg',
-    body: [{point:"Manutentionnaire : installation, réparation et récupération de bornes de rechargement de portables sur plusieurs sites et pays : Roland Garros, Parc des Princes, Belgique, Pays-Bas, Normandie…"},{point:"Hôte : assistance des personnes qui souhaitaient mettre leurs portables à recharger, maintenance des machines pendant tout le tournoi."}]
+    body: [{point:"Manutentionnaire : installation, réparation et récupération de bornes de rechargement de portables sur plusieurs sites et pays : Roland Garros, Parc des Princes, Belgique, Pays-Bas, Normandie, etc."},{point:"Hôte : assistance des personnes qui souhaitaient mettre leurs portables à recharger, maintenance des machines pendant tout le tournoi."}]
   },
 ];
 export default experiences;
