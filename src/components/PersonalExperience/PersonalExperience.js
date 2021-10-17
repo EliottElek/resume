@@ -10,7 +10,7 @@ const PersonalExperience = ({ responsive }) => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        height: "100%",
+        // height: "100%",
         width: "95%",
         margin: "auto",
       }}
@@ -21,7 +21,7 @@ const PersonalExperience = ({ responsive }) => {
           flexDirection: "column",
           alignItems: "flex-start",
           justifyContent: "baseline",
-          height: "100%",
+          // height: "100%",
           width: "100%",
         }}
       >
