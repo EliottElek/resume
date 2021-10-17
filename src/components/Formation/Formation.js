@@ -9,7 +9,6 @@ const Formation = ({ responsive }) => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        height: "100%",
         width: "95%",
         margin: "auto",
       }}
@@ -20,7 +19,6 @@ const Formation = ({ responsive }) => {
           flexDirection: "column",
           alignItems: "flex-start",
           justifyContent: "baseline",
-          height: "100%",
           width: "100%",
         }}
       >
@@ -51,8 +49,8 @@ const Formation = ({ responsive }) => {
             <Typography
               variant="body1"
               sx={{
-                marginTop:'8px',
-                marginBottom:'22px',
+                marginTop:'0.2em',
+                marginBottom:'0.7em',
                 color: "gray",
               }}
             >

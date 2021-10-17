@@ -32,7 +32,7 @@ const PersonalExperience = ({ responsive }) => {
             color: "gray",
             textTransform: "uppercase",
             fontWeight: "bold",
-            marginTop:"10px"
+            marginTop:"1em"
           }}
         >
           Expérience professionnelle
@@ -57,8 +57,8 @@ const PersonalExperience = ({ responsive }) => {
  <Typography
               variant="body1"
               sx={{
-                marginTop:'2px',
-                marginBottom:'8px',
+                marginTop:'0.2em',
+                marginBottom:'0.7em',
                 color: "gray",
               }}
             >
