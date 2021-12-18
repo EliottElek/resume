@@ -1,5 +1,12 @@
-import * as React from 'react';
+import * as React from "react";
 import Container from "./components/Container/Container";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { orange } from "@mui/material/colors";
+import profile from './components/images/profilePic.jpg'
+const title = document.getElementById("title");
+title.innerHTML = "Eliott Morcillo - FR";
+const favicon = document.getElementById("favicon");
+favicon.href = profile;
 function App() {
   const [responsive, setResponsive] = React.useState(false);
   React.useEffect(() => {
@@ -16,19 +23,28 @@ function App() {
       window.removeEventListener("resize", () => setResponsiveness());
     };
   }, []);
-  return (
-    <div
-      className="App"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems:"center",
-        height:"auto!important"
+  const outerTheme = createTheme({
+    palette: {
+      primary: {
+        main: orange[500],
+      },
+    },
+  });
 
-      }}
-    >
-      <Container responsive={responsive}/>
-    </div>
+  return (
+    <ThemeProvider theme={outerTheme}>
+      <div
+        className="App"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          height: "auto!important",
+        }}
+      >
+        <Container responsive={responsive} />
+      </div>
+    </ThemeProvider>
   );
 }
 
