@@ -34,8 +34,8 @@ const Formation = ({ responsive }) => {
           Formation
         </Typography>
         <Divider />
-        {formations.map((formation) => (
-          <>
+        {formations.map((formation, i) => (
+          <div key={i}>
             <Typography
               variant="body1"
               sx={{
@@ -45,18 +45,20 @@ const Formation = ({ responsive }) => {
             >
               {formation.title}
             </Typography>
-            <Typography variant = 'caption' color="darkgrey">{formation.period}</Typography>
+            <Typography variant="caption" color="darkgrey">
+              {formation.period}
+            </Typography>
             <Typography
               variant="body1"
               sx={{
-                marginTop:'0.2em',
-                marginBottom:'0.7em',
+                marginTop: "0.2em",
+                marginBottom: "0.7em",
                 color: "gray",
               }}
             >
               {formation.body}
             </Typography>
-          </>
+          </div>
         ))}
       </div>
     </div>

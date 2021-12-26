@@ -1,9 +1,9 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import Divider from "../Divider/Divider";
-import Logo from '../Logo/Logo';
+import Logo from "../Logo/Logo";
 import experiences from "../../informations/experiences";
-const PersonalExperience = ({ responsive }) => {
+const PersonalExperience = ({ responsive, lang }) => {
   return (
     <div
       style={{
@@ -32,41 +32,55 @@ const PersonalExperience = ({ responsive }) => {
             color: "gray",
             textTransform: "uppercase",
             fontWeight: "bold",
-            marginTop:"1em"
+            marginTop: "1em",
           }}
         >
-          Expérience professionnelle
+          {lang === "english"
+            ? "Professionnal experiences"
+            : "Expérience professionnelle"}
         </Typography>
         <Divider />
-        {experiences.map((experience) => (
-          <>
-          <div style ={{display:'flex', justifyContent:"center", alignItems:"center"}}>
-            <Typography
-              variant="body1"
-              sx={{
-                color: "gray",
-                textDecoration: "underline",
+        {experiences.map((experience, i) => (
+          <div key={i}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
               }}
             >
-              {experience.title}
-            </Typography>
-            <Logo logoUrl = {experience.logoUrl}/>
+              <Typography
+                variant="body1"
+                sx={{
+                  color: "gray",
+                  textDecoration: "underline",
+                }}
+              >
+                {experience.title}
+              </Typography>
+              <Logo logoUrl={experience.logoUrl} />
             </div>
-            <Typography variant="caption" gutterBottom component="div" color="darkgrey">{experience.period}</Typography>
-            {experience.body.map((point)=>(
- <Typography
-              variant="body1"
-              sx={{
-                marginTop:'0.2em',
-                marginBottom:'0.7em',
-                color: "gray",
-              }}
+            <Typography
+              variant="caption"
+              gutterBottom
+              component="div"
+              color="darkgrey"
             >
-              <li>{point.point}</li>
+              {experience.period}
             </Typography>
+            {experience.body.map((point, i) => (
+              <Typography
+                key={i}
+                variant="body1"
+                sx={{
+                  marginTop: "0.2em",
+                  marginBottom: "0.7em",
+                  color: "gray",
+                }}
+              >
+                <li>{point.point}</li>
+              </Typography>
             ))}
-           
-          </>
+          </div>
         ))}
       </div>
     </div>

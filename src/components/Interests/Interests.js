@@ -9,8 +9,8 @@ import {
 } from "@mui/material";
 import SportsFootballIcon from "@mui/icons-material/SportsFootball";
 import BuildIcon from "@mui/icons-material/Build";
-import ImportantDevicesIcon from '@mui/icons-material/ImportantDevices';
-const Interests = ({responsive}) => {
+import ImportantDevicesIcon from "@mui/icons-material/ImportantDevices";
+const Interests = ({ responsive, lang }) => {
   return (
     <div style={{ width: "100%" }}>
       <Typography
@@ -21,7 +21,7 @@ const Interests = ({responsive}) => {
           fontWeight: "bold",
         }}
       >
-        Intérêts
+        {lang === "english" ? "Interests" : "Intérêts"}
       </Typography>
       <List sx={{ width: "100%" }}>
         <Divider />
@@ -50,7 +50,15 @@ const Interests = ({responsive}) => {
           </ListItemText>
         </ListItem>
       </List>
-      <Typography variant="caption" align = 'center' gutterBottom component="div" color="darkgrey">CV réalisé en ReactJS par Eliott Morcillo</Typography>
+      <Typography
+        variant="caption"
+        align="center"
+        gutterBottom
+        component="div"
+        color="darkgrey"
+      >
+        CV réalisé en ReactJS par Eliott Morcillo
+      </Typography>
     </div>
   );
 };

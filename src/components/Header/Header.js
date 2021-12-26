@@ -25,8 +25,6 @@ const Header = ({ responsive }) => {
       >
         <Grid
           item
-          spacing={0}
-          direction="column"
           alignItems="center"
           justifyContent="center"
           xs={12}
@@ -36,6 +34,7 @@ const Header = ({ responsive }) => {
           <Avatar responsive={responsive} />
         </Grid>
         <Grid
+          container
           spacing={0}
           direction="column"
           alignItems="center"

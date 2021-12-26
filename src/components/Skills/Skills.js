@@ -10,7 +10,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Divider from "@mui/material/Divider";
 
-const Skills = ({responsive}) => {
+const Skills = ({responsive, lang}) => {
   return (
     <div style={{ width: "100%" }}>
       <Typography
@@ -21,7 +21,9 @@ const Skills = ({responsive}) => {
           fontWeight: "bold",
         }}
       >
-        Compétences
+        {lang === "english"
+            ? "Skills"
+            : "Compétences"}
       </Typography>
       <List sx={{ width: "100%" }}>
         <Divider />
