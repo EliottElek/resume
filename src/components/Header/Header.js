@@ -19,6 +19,8 @@ const Header = ({ responsive }) => {
         style={{
           backgroundImage: "url('" + background + "')",
           backgroundSize: "cover",
+          borderTopLeftRadius: "5px",
+          borderTopRightRadius: "5px",
           backgroundPosition: "center",
         }}
         sx={{ height: "100%" }}

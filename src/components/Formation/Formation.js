@@ -1,8 +1,12 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import Divider from "../Divider/Divider";
-import formations from "../../informations/formations";
-const Formation = ({ responsive }) => {
+//french
+import formationsFrench from "../../informationsFrench/formations";
+import formationsEng from "../../informationsFrench/formations";
+
+const Formation = ({ responsive, lang }) => {
+  const formations = lang === "english" ? formationsEng : formationsFrench;
   return (
     <div
       style={{

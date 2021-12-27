@@ -2,8 +2,12 @@ import React from "react";
 import { Typography } from "@mui/material";
 import Divider from "../Divider/Divider";
 import Logo from "../Logo/Logo";
-import experiences from "../../informations/experiences";
+import experiencesFrench from "../../informationsFrench/experiences";
+import experiencesEng from "../../informationsEng/experiences";
+
 const PersonalExperience = ({ responsive, lang }) => {
+  const experiences = lang === "english" ? experiencesEng : experiencesFrench;
+
   return (
     <div
       style={{

@@ -69,8 +69,13 @@ function App() {
         }}
       >
         <Select
-          style={{
+          sx={{
             color: "whitesmoke",
+            border: "none",
+            "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+              border: "1px solid #484850",
+              borderRadius: "5px 5px 5px 5px"
+            },
           }}
           fullWidth
           value={lang}

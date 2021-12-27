@@ -9,13 +9,6 @@ import Contact from "../Contact/Contact";
 import Skills from "../Skills/Skills";
 import Interests from "../Interests/Interests";
 
-//french
-// import PersonalExperience from "../PersonalExperience/PersonalExperience";
-// import Formation from "../Formation/Formation";
-// import Contact from "../Contact/Contact";
-// import Skills from "../Skills/Skills";
-// import Interests from "../Interests/Interests";
-
 import { useCookies } from "react-cookie";
 
 import english from "../images/english.png";
@@ -56,6 +49,8 @@ const styles = {
     borderRadius: "7px",
     border: "none",
     outline: "none",
+    background: "rgba(0,0,0,0.8)",
+    color: "whitesmoke",
   },
 };
 const Container = ({ responsive, handleChangeLang, lang }) => {
@@ -72,8 +67,10 @@ const Container = ({ responsive, handleChangeLang, lang }) => {
       <Paper
         elevation={4}
         sx={{
-          maxWidth: "842px",
+          margin: { sx: 0, md: 2 },
+          maxWidth: "950px",
           width: "100%",
+          bordeRadius: "5px",
           height: "auto!important",
         }}
       >

@@ -10,6 +10,7 @@ import {
 import SportsFootballIcon from "@mui/icons-material/SportsFootball";
 import BuildIcon from "@mui/icons-material/Build";
 import ImportantDevicesIcon from "@mui/icons-material/ImportantDevices";
+
 const Interests = ({ responsive, lang }) => {
   return (
     <div style={{ width: "100%" }}>
@@ -30,24 +31,36 @@ const Interests = ({ responsive, lang }) => {
             <SportsFootballIcon />
           </ListItemIcon>
           <ListItemText>
-            <ListItemText primary="Football américain en compétition (championnat national) : 6 ans, quarterback." />
+            {lang === "english" ? (
+              <ListItemText primary="American football in competition (national championship) : 6 years, quarterback." />
+            ) : (
+              <ListItemText primary="Football américain en compétition (championnat national) : 6 ans, quarterback." />
+            )}
           </ListItemText>
         </ListItem>
         <ListItem disablePadding sx={{ width: "100%" }}>
           <ListItemIcon>
             <BuildIcon />
           </ListItemIcon>
-          <ListItemText>
-            <ListItemText primary="Usinage conventionnel : modélisation, prototypage et construction de toutes sortes de mécanismes et objets dans des matériaux tels que l’acier, l’aluminium, le laiton, le plastique." />
-          </ListItemText>
+          {lang === "english" ? (
+            <ListItemText primary="Conventionnal machining : 3D modeling, prototyping and building of all kind of mechanisms from materials like steel, aluminium, brass, platic..." />
+          ) : (
+            <ListItemText>
+              <ListItemText primary="Usinage conventionnel : modélisation, prototypage et construction de toutes sortes de mécanismes et objets dans des matériaux tels que l’acier, l’aluminium, le laiton, le plastique..." />
+            </ListItemText>
+          )}
         </ListItem>
         <ListItem disablePadding sx={{ width: "100%" }}>
           <ListItemIcon>
             <ImportantDevicesIcon />
           </ListItemIcon>
-          <ListItemText>
-            <ListItemText primary="Programmation web : passion récente pour le développement web notamment en ReactJS. Création de nombreuses applications liées à des APIs, et utilisation de librairies Javascript telles que BabylonJS." />
-          </ListItemText>
+          {lang === "english" ? (
+            <ListItemText primary="Web development : deep interest in web development, in particular using NodeJS and ReactJS. Creation of multiple web applications linked to APIs, and using different librairies like BabylonJS." />
+          ) : (
+            <ListItemText>
+              <ListItemText primary="Programmation web : passion pour le développement web notamment en ReactJS et NodeJS. Création de nombreuses applications liées à des APIs, et utilisation de librairies Javascript telles que BabylonJS." />
+            </ListItemText>
+          )}
         </ListItem>
       </List>
       <Typography
@@ -57,7 +70,9 @@ const Interests = ({ responsive, lang }) => {
         component="div"
         color="darkgrey"
       >
-        CV réalisé en ReactJS par Eliott Morcillo
+        {lang === "english"
+          ? "Resume created with ReactJS by Eliott Morcillo"
+          : "CV réalisé en ReactJS par Eliott Morcillo"}
       </Typography>
     </div>
   );
