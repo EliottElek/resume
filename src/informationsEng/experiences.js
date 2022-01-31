@@ -1,8 +1,8 @@
 const experiences = [
   {
     title: "HOFFMANN.AI",
-    logoUrl:
-      "https://media-exp1.licdn.com/dms/image/C4E0BAQE9ZAx0z1F7gA/company-logo_200_200/0/1627115648556?e=1642636800&v=beta&t=OXWCACuhN5A027W-dRbgWHr8rzR99qb6_e-pLEjtLVc",
+    // logoUrl:
+    //   "https://media-exp1.licdn.com/dms/image/C4E1BAQESpuZj7ZkKdw/company-background_10000/0/1627115707909?e=2159024400&v=beta&t=PNQFgXyaK-MQ3SXhtjyuF4xGBS9KF5nNd7OQ2velD9o",
     period: "April 2021– September 2021",
     body: [
       {

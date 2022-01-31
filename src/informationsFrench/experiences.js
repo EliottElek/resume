@@ -1,7 +1,7 @@
 const experiences = [
   {
     title: "HOFFMANN.AI",
-    logoUrl : "https://media-exp1.licdn.com/dms/image/C4E0BAQE9ZAx0z1F7gA/company-logo_200_200/0/1627115648556?e=1642636800&v=beta&t=OXWCACuhN5A027W-dRbgWHr8rzR99qb6_e-pLEjtLVc",
+    // logoUrl : "https://media-exp1.licdn.com/dms/image/C4E0BAQE9ZAx0z1F7gA/company-logo_200_200/0/1627115648556?e=1642636800&v=beta&t=OXWCACuhN5A027W-dRbgWHr8rzR99qb6_e-pLEjtLVc",
     period: 'Avril 2021– Septembre 2021',
     body:[{
       point: "Développement d'applications web en ReactJS"

@@ -71,10 +71,11 @@ function App() {
         <Select
           sx={{
             color: "whitesmoke",
+            height: "50px",
             border: "none",
             "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-              border: "1px solid #484850",
-              borderRadius: "5px 5px 5px 5px"
+              border: "none",
+              borderRadius: "5px 5px 5px 5px",
             },
           }}
           fullWidth
@@ -85,7 +86,7 @@ function App() {
             "aria-label": "Without label",
           }}
         >
-          <MenuItem value="french">
+          <MenuItem value="french" style = {{margin : "3px"}}>
             <img style={styles.img} src={france} alt="france" />
           </MenuItem>
           <MenuItem value="english">
