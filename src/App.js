@@ -8,7 +8,11 @@ import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import english from "./components/images/english.png";
 import france from "./components/images/france.png";
-import { Backdrop, CircularProgress } from "@mui/material";
+import { Backdrop, Button, CircularProgress } from "@mui/material";
+import DownloadIcon from "@mui/icons-material/Download";
+import { saveAs } from "file-saver";
+import pdfFrance from "./components/assets/EliottMorcillo.pdf";
+import pdfEng from "./components/assets/EliottMorcilloEng.pdf";
 
 const styles = {
   img: {
@@ -28,7 +32,7 @@ function App() {
       const title = document.getElementById("title");
       title.innerHTML = "Eliott Morcillo - " + language;
       setCookie("lang", language);
-      setLang(language);
+      setLang("english");
       setOpenBack(false);
     }, 700);
   };
@@ -55,13 +59,37 @@ function App() {
     },
   });
 
+  const Doc = () => {
+    return (
+      <div
+        className="App"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          height: "auto!important",
+        }}
+      >
+        <Container
+          lang={lang}
+          setLang={setLang}
+          handleChangeLang={handleChangeLang}
+          responsive={responsive}
+        />
+      </div>
+    );
+  };
+  const saveFile = () => {
+    const path = lang === "english" ? pdfEng : pdfFrance;
+    saveAs(path, "EliottMorcillo.pdf");
+  };
   return (
     <ThemeProvider theme={outerTheme}>
       <div
         style={{
           position: "absolute",
-          right: "0",
-          top: "1",
+          right: "10px",
+          top: "10px",
           width: "110px",
           color: "whitesmoke",
           background: "rgba(0,0,0,0.4)",
@@ -86,30 +114,29 @@ function App() {
             "aria-label": "Without label",
           }}
         >
-          <MenuItem value="french" style = {{margin : "3px"}}>
+          <MenuItem value="french" style={{ margin: "3px" }}>
             <img style={styles.img} src={france} alt="france" />
           </MenuItem>
           <MenuItem value="english">
             <img style={styles.img} src={english} alt="english" />
           </MenuItem>
         </Select>
+        <Button
+          sx={{ color: "#fff" }}
+          style={{
+            fontSize: "1rem!important",
+            display: "flex",
+            alignItems: "center",
+            width: "100%",
+            justifyContent: "center",
+          }}
+          onClick={saveFile}
+        >
+          <DownloadIcon />
+          PDF
+        </Button>
       </div>
-      <div
-        className="App"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          height: "auto!important",
-        }}
-      >
-        <Container
-          lang={lang}
-          setLang={setLang}
-          handleChangeLang={handleChangeLang}
-          responsive={responsive}
-        />
-      </div>
+      <Doc />
       <Backdrop
         sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
         open={openBack}

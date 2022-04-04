@@ -8,8 +8,9 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import TouchAppIcon from '@mui/icons-material/TouchApp';
+import TouchAppIcon from "@mui/icons-material/TouchApp";
 import Divider from "@mui/material/Divider";
+import { Link } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 const Contact = ({ responsive }) => {
   return (
@@ -25,6 +26,17 @@ const Contact = ({ responsive }) => {
         Contact
       </Typography>
       <List sx={{ width: "100%" }}>
+        <Typography
+          variant="caption"
+          align="center"
+          gutterBottom
+          component="div"
+          color="darkgrey"
+        >
+          <Link href="https://eliottmorcillo.netlify.app">
+            https://eliottmorcillo.netlify.app/
+          </Link>{" "}
+        </Typography>
         <Divider />
         <ListItem disablePadding sx={{ width: "100%" }}>
           <ListItemButton
@@ -39,10 +51,11 @@ const Contact = ({ responsive }) => {
             <ListItemText>
               <ListItemText primary="eliott.morcillo@gmail.com" />
             </ListItemText>
-            {!responsive && 
-            <ListItemIcon>
-              <TouchAppIcon />
-            </ListItemIcon>}
+            {!responsive && (
+              <ListItemIcon>
+                <TouchAppIcon />
+              </ListItemIcon>
+            )}
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
@@ -56,10 +69,11 @@ const Contact = ({ responsive }) => {
               <PhoneInTalkIcon />
             </ListItemIcon>
             <ListItemText primary="+33 6 21 21 82 25" />
-            {!responsive && 
-            <ListItemIcon>
-              <TouchAppIcon />
-            </ListItemIcon>}
+            {!responsive && (
+              <ListItemIcon>
+                <TouchAppIcon />
+              </ListItemIcon>
+            )}
           </ListItemButton>
         </ListItem>
       </List>
@@ -77,10 +91,11 @@ const Contact = ({ responsive }) => {
               <LinkedInIcon />
             </ListItemIcon>
             <ListItemText primary="Eliott Morcillo" />
-            {!responsive && 
-            <ListItemIcon>
-              <TouchAppIcon />
-            </ListItemIcon>}
+            {!responsive && (
+              <ListItemIcon>
+                <TouchAppIcon />
+              </ListItemIcon>
+            )}
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
@@ -94,14 +109,15 @@ const Contact = ({ responsive }) => {
               <GitHubIcon />
             </ListItemIcon>
             <ListItemText primary="EliottElek" />
-            {!responsive && 
-            <ListItemIcon>
-              <TouchAppIcon />
-            </ListItemIcon>}
+            {!responsive && (
+              <ListItemIcon>
+                <TouchAppIcon />
+              </ListItemIcon>
+            )}
           </ListItemButton>
         </ListItem>
-        </List>
-        {responsive && <Divider />}
+      </List>
+      {responsive && <Divider />}
     </div>
   );
 };

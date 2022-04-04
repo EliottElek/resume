@@ -6,6 +6,7 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
+  Link,
 } from "@mui/material";
 import SportsFootballIcon from "@mui/icons-material/SportsFootball";
 import BuildIcon from "@mui/icons-material/Build";
@@ -55,13 +56,24 @@ const Interests = ({ responsive, lang }) => {
             <ImportantDevicesIcon />
           </ListItemIcon>
           {lang === "english" ? (
-            <ListItemText primary="Web development : deep interest in web development, in particular using NodeJS and ReactJS. Creation of multiple web applications linked to APIs, and using different librairies like BabylonJS." />
+            <ListItemText primary="Web development : deep interest in web development, in particular using NodeJS and ReactJS. Creation of multiple web applications linked to APIs, and using different librairies like BabylonJS. Making of a UI librairy for react components, lightweight and fully customizable, for personnal use. " />
           ) : (
             <ListItemText>
-              <ListItemText primary="Programmation web : passion pour le développement web notamment en ReactJS et NodeJS. Création de nombreuses applications liées à des APIs, et utilisation de librairies Javascript telles que BabylonJS." />
+              <ListItemText primary="Programmation web : passion pour le développement web notamment en ReactJS et NodeJS. Création de nombreuses applications liées à des APIs, et utilisation de librairies Javascript telles que BabylonJS. Création d'une librairie grqphique en React, légère et complètement stylisable, pour utilisation personnelle." />
             </ListItemText>
           )}
         </ListItem>
+        <Typography
+          variant="caption"
+          align="center"
+          gutterBottom
+          component="div"
+          color="darkgrey"
+        >
+          <a target="blank" href="https://simple-materials.netlify.app/">
+            https://simple-materials.netlify.app/
+          </a>
+        </Typography>
       </List>
       <Typography
         variant="caption"
@@ -73,6 +85,17 @@ const Interests = ({ responsive, lang }) => {
         {lang === "english"
           ? "Resume created with ReactJS by Eliott Morcillo"
           : "CV réalisé en ReactJS par Eliott Morcillo"}
+      </Typography>
+      <Typography
+        variant="caption"
+        align="center"
+        gutterBottom
+        component="div"
+        color="darkgrey"
+      >
+        <Link href="https://eliottmorcillo.netlify.app">
+          https://eliottmorcillo.netlify.app/
+        </Link>{" "}
       </Typography>
     </div>
   );

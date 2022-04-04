@@ -37,7 +37,7 @@ const Skills = ({ responsive, lang }) => {
           <ListItemIcon>
             <DeveloperModeIcon />
           </ListItemIcon>
-          <ListItemText primary="ReactJS, BabylonJS, ReactNative, Gatsby" />
+          <ListItemText primary="ReactJS, BabylonJS, React Native, Gatsby, GraphQL, Typeorm, Apollo" />
         </ListItem>
       </List>
       <List>
