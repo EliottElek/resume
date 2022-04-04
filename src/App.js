@@ -2,7 +2,7 @@ import * as React from "react";
 import Container from "./components/Container/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { orange } from "@mui/material/colors";
-import profile from "./components/images/profilePic.jpg";
+import profile from "./components/images/favicon.png";
 import { useCookies } from "react-cookie";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
