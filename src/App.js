@@ -32,7 +32,7 @@ function App() {
       const title = document.getElementById("title");
       title.innerHTML = "Eliott Morcillo - " + language;
       setCookie("lang", language);
-      setLang("english");
+      setLang(language);
       setOpenBack(false);
     }, 700);
   };
